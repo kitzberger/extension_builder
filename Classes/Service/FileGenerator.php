@@ -238,9 +238,9 @@ class FileGenerator
 
         $this->generateDomainObjectRelatedFiles();
 
-        if ($extension->getGenerateDocumentationTemplate()) {
-            $this->generateDocumentationFiles();
-        }
+#        if ($extension->getGenerateDocumentationTemplate()) {
+#            $this->generateDocumentationFiles();
+#        }
 
         $this->generateEmptyGitRepository();
     }
