@@ -12,10 +12,4 @@ $GLOBALS['TCA']['{domainObject.databaseTableName}']['columns'][$GLOBALS['TCA']['
    '{domainObject.databaseTableName}'
 );</f:if>
 </f:for>
-<f:if condition="{domainObject.mappedToExistingTable}">
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
-    '{domainObject.mapToTable}',
-    'EXT:{domainObject.extension.extensionKey}/Resources/Private/Language/locallang_csh_{domainObject.databaseTableName}.xlf'
-);
-</f:if>
 <f:if condition="{domainObject.mappedToExistingTable}">//{domainObject.mapToTable}</f:if>

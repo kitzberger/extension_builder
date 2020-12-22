@@ -390,13 +390,13 @@ class FileGenerator
                     );
                 }
             }
-            foreach ($this->extension->getDomainObjects() as $domainObject) {
-                $fileContents = $this->generateLocallangFileContent('_csh', 'domainObject', $domainObject);
-                $this->writeFile(
-                    $this->languageDirectory . 'locallang_csh_' . $domainObject->getDatabaseTableName() . '.xlf',
-                    $fileContents
-                );
-            }
+            #foreach ($this->extension->getDomainObjects() as $domainObject) {
+            #    $fileContents = $this->generateLocallangFileContent('_csh', 'domainObject', $domainObject);
+            #    $this->writeFile(
+            #        $this->languageDirectory . 'locallang_csh_' . $domainObject->getDatabaseTableName() . '.xlf',
+            #        $fileContents
+            #    );
+            #}
         } catch (\Exception $e) {
             throw new \Exception('Could not generate locallang files, error: ' . $e->getMessage());
         }
